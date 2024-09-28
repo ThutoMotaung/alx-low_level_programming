@@ -1,3 +1,13 @@
+/**
+ * Calculates the length of the initial segment of 'str1' which consists entirely 
+ * of characters in 'str2'.
+ *
+ * @param str1 Pointer to the null-terminated string to be scanned.
+ * @param str2 Pointer to the null-terminated string containing the list of characters to match.
+ * @return The number of characters in the initial segment of 'str1' that consist only 
+ *         of characters from 'str2'.
+ */
+size_t _strspn(const char *str1, const char *str2);
 size_t _strspn(const char *s, const char *accept)
 {
     size_t len = 0;

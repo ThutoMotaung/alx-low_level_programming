@@ -1,3 +1,15 @@
+/**
+ * Locates the first occurrence of the character 'c' in the null-terminated string 'str'.
+ *
+ * The terminating null byte is considered part of the string, so if 'c' is '\0',
+ * the function will return a pointer to the null terminator.
+ *
+ * @param str Pointer to the null-terminated string to be searched.
+ * @param c   The character to be located.
+ * @return A pointer to the first occurrence of 'c' in the string, or NULL if the
+ *         character is not found.
+ */
+char *_strchr(const char *str, int c);
 char *_strchr(const char *s, int c)
 {
     while (*s != '\0')

@@ -1,3 +1,14 @@
+/**
+ * Copies 'n' bytes from memory area 'src' to memory area 'dest'.
+ *
+ * The memory areas must not overlap. Use _memmove if the memory areas do overlap.
+ *
+ * @param dest Pointer to the destination memory area where the content is to be copied.
+ * @param src  Pointer to the source memory area to be copied.
+ * @param n    Number of bytes to copy.
+ * @return A pointer to the destination memory area 'dest'.
+ */
+void *_memcpy(void *dest, const void *src, size_t n);
 void *_memcpy(void *dest, const void *src, size_t n)
 {
     char *d = (char *)dest;

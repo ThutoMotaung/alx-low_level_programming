@@ -1,3 +1,12 @@
+/**
+ * Locates the first occurrence in the string 'str1' of any of the characters in 'str2'.
+ *
+ * @param str1 Pointer to the null-terminated string to be searched.
+ * @param str2 Pointer to the null-terminated string containing the characters to search for.
+ * @return A pointer to the first occurrence in 'str1' of any character from 'str2', 
+ *         or NULL if no such character is found.
+ */
+char *_strpbrk(const char *str1, const char *str2);
 char *_strpbrk(const char *s, const char *accept)
 {
     const char *p;

@@ -1,3 +1,12 @@
+/**
+ * Sets the first 'n' bytes of the block of memory pointed by 's' to the specified value 'c'.
+ * 
+ * @param s Pointer to the block of memory to fill.
+ * @param c Value to set.
+ * @param n Number of bytes to be set to the value.
+ * @return A pointer to the memory block 's'.
+ */
+void *_memset(void *s, int c, size_t n);
 void *_memset(void *s, int c, size_t n)
 {
     unsigned char *p = s;

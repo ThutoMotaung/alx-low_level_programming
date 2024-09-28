@@ -1,3 +1,12 @@
+/**
+ * Locates the first occurrence of the substring 'needle' in the string 'haystack'.
+ *
+ * @param haystack Pointer to the null-terminated string in which to search.
+ * @param needle   Pointer to the null-terminated substring to be located.
+ * @return A pointer to the first occurrence of 'needle' in 'haystack', or NULL if 'needle'
+ *         is not found or if 'needle' is an empty string.
+ */
+char *_strstr(const char *haystack, const char *needle);
 char *_strstr(const char *haystack, const char *needle)
 {
     int i;
