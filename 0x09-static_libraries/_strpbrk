@@ -1,0 +1,17 @@
+char *_strpbrk(const char *s, const char *accept)
+{
+    const char *p;
+
+    while (*s)
+    {
+        for (p = accept; *p; p++)
+        {
+            if (*s == *p)
+                return (char *)s;
+        }
+        s++;
+    }
+
+    return NULL;
+}
+
